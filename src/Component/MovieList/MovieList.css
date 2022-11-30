@@ -1,0 +1,14 @@
+.movie__list {
+  padding: 0 3rem 3rem 3rem;
+  background-color:rgb(98, 96, 96);
+  height: auto;
+}
+
+.list__cards {
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 8rem;
+  row-gap: 3rem;
+}

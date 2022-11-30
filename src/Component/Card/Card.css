@@ -1,0 +1,27 @@
+.card-container {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 8rem;
+    row-gap: 3rem;
+  }
+  .single-card {
+    width: fit-content;
+    text-align: center;
+    margin: 0rem 0rem;
+  }
+  .single-card img {
+    width: 12rem;
+  }
+  .card-info {
+    margin: 2px;
+    font-size: 1.1rem;
+    max-width: 12rem;
+  }
+
+  
+@media screen and (max-width:1024px) {
+
+  
+}

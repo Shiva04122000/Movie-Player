@@ -1,0 +1,255 @@
+.movie {
+  height: 75vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie__intro {
+  width: 90%;
+  margin-top: 2rem;
+  background-image: linear-gradient(
+    to right,
+    rgb(0 0 0) 150px,
+    rgb(58 39 39 / 84%) 100%
+  );
+  border-radius: 1rem;
+}
+.rating {
+  font-style: italic;
+  color: #7373ff;
+  font-size: 1.1rem;
+}
+.movie__backdrop {
+  width: 65%;
+  opacity: 0.2;
+  padding-left: 28rem;
+}
+.time_action {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+.movie__runtime {
+  border: 1px solid #9898983d;
+  width: max-content;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+.movie__detail {
+  align-items: center;
+  width: 75%;
+  position: relative;
+  bottom: 470px;
+  left: -74px;
+}
+.movie_detail_inner {
+  display: flex;
+}
+.movie__detailLeft {
+  margin-right: 30px;
+}
+
+.movie__poster {
+  width: 135px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+
+.movie__detailRight {
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie__detailRightTop > div {
+  text-shadow: 0px 0px 5px #000000;
+  margin-bottom: 0.5rem;
+}
+
+.movie__name {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.movie__voteCount {
+  margin-left: 1rem;
+}
+
+.movie__genres {
+  margin: 0rem 0;
+}
+
+.movie__genre {
+  padding: 0.1rem;
+}
+
+.movie__detailRightBottom {
+  margin: 2rem 0rem;
+  color: white;
+  width: 60rem;
+}
+
+.synopsisText {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.synopsisText > div:last-of-type {
+  margin-left: auto;
+}
+
+.movie__links {
+  position: relative;
+  bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.movie__heading {
+  font-size: 2.2rem;
+}
+
+.movie__Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  color: black;
+  font-weight: bold;
+}
+
+.movie__homeButton {
+  background-color: rgb(255, 0, 0);
+}
+
+.movie__imdbButton {
+  background-color: #f3ce13;
+}
+
+.newTab {
+  margin-left: 1.4rem;
+}
+
+.movie__production {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.movie__productionComapany {
+  width: 200px;
+  margin: 2rem;
+}
+
+.productionCompanyImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cast {
+  margin-left: 5rem;
+}
+.cast-container {
+  display: flex;
+  margin: 0rem 1rem;
+  padding: 1rem 4rem;
+  gap: 2rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.single-card {
+  width: fit-content;
+  text-align: center;
+  margin: 0rem 0rem;
+}
+.single-card img {
+  width: 12rem;
+}
+.card-info {
+  margin: 2px;
+  font-size: 1.1rem;
+  max-width: 12rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .movie__backdrop {
+    width: 100%;
+    padding-left: 0rem;
+    border-radius: 19px;
+  }
+  .movie__detail {
+    bottom: 184px;
+    left: 0px;
+  }
+  .movie__poster {
+    width: 90px;
+    right: 5px;
+    top: 27px;
+    position: relative;
+  }
+  .movie__name {
+    font-size: 1.5rem;
+  }
+  .rating {
+    font-size: 0.9rem;
+  }
+  .movie__detailRightTop {
+    position: relative;
+    right: 25px;
+    top: 18px;
+    font-size: 0.6rem;
+  }
+  .movie__detailRightBottom {
+    font-size: 0.9rem;
+    width: 21rem;
+    position: relative;
+    right: 25px;
+  }
+  .movie {
+    height: 55vh;
+  }
+  .synopsisText {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-weight: 700;
+  }
+  .synopsisText p {
+    color: #100f0f;
+  }
+  .single-card img {
+    width: 17rem;
+  }
+  .mob-card img{
+    width: 10rem;
+  }
+  .cast-container {
+    margin: 0rem 1rem;
+    padding: 1rem 0rem;
+    gap: 1rem;
+  }
+  .cast {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+  .card-info {
+    margin: 2px;
+    font-size: 1.2rem;
+    max-width: 12rem;
+    text-align: left;
+    padding: 0px 5px;
+  }
+}
